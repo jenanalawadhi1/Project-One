@@ -1,2 +1,2 @@
-# Project-One
+# Sudoku Game
 Unit One Project - GA
