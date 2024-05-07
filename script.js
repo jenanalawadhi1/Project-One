@@ -92,3 +92,33 @@ function selectbox() {
     }
   }
 }
+function solveGame() {
+  for (let r = 0; r < 9; r++) {
+    for (let c = 0; c < 9; c++) {
+      let box = document.getElementById(r + '*' + c)
+      if (box.innerText === '') {
+        box.innerText = solution[r][c]
+        box.classList.add('box-solved')
+      }
+    }
+  }
+}
+
+function resetGame() {
+  for (let r = 0; r < 9; r++) {
+    for (let c = 0; c < 9; c++) {
+      let box = document.getElementById(r + '*' + c)
+      if (board[r][c] === '*') {
+        box.innerText = ''
+      }
+    }
+  }
+  if (selectNum) {
+    solution
+    selectNum.classList.remove('number-selected')
+    selectNum = null
+  }
+
+  errors = 0
+  document.getElementById('errors').innerText = errors
+}
