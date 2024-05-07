@@ -66,3 +66,29 @@ function setGame() {
   }
 }
 
+function selectNumber() {
+  if (selectNum != null) {
+    selectNum.classList.remove('number-selected')
+  }
+  selectNum = this
+  selectNum.classList.add('number-selected')
+}
+
+function selectbox() {
+  if (selectNum) {
+    if (this.innerText != '') {
+      return
+    }
+
+    let location = this.id.split('*')
+    let r = parseInt(location[0])
+    let c = parseInt(location[1])
+
+    if (solution[r][c] == selectNum.id) {
+      this.innerText = selectNum.id
+    } else {
+      errors += 1
+      document.getElementById('errors').innerText = errors
+    }
+  }
+}
