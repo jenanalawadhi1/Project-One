@@ -1,7 +1,5 @@
 let selectNum
-let selectBox
-
-let errors
+let errors = 0
 
 let board = [
   '******2**',
@@ -26,3 +24,45 @@ let solution = [
   '291436875',
   '736185429'
 ]
+
+function darkMode() {
+  let number = document.body
+  number.classList.toggle('dark-mode')
+}
+
+window.onload = function () {
+  setGame()
+  document.getElementById('reset-btn').addEventListener('click', resetGame)
+  document.getElementById('solve-btn').addEventListener('click', solveGame)
+}
+
+function setGame() {
+  for (let i = 1; i <= 9; i++) {
+    let number = document.createElement('div')
+    number.id = i
+    number.innerText = i
+    number.addEventListener('click', selectNumber)
+    number.classList.add('number')
+    document.getElementById('digits').appendChild(number)
+  }
+
+  for (let r = 0; r < 9; r++) {
+    for (let c = 0; c < 9; c++) {
+      let box = document.createElement('div')
+      box.id = r + '*' + c
+      if (board[r][c] != '*') {
+        box.innerText = board[r][c]
+      }
+      if (r == 2 || r == 5) {
+        box.classList.add('horizontal-line')
+      }
+      if (c == 2 || c == 5) {
+        box.classList.add('vertical-line')
+      }
+      box.addEventListener('click', selectbox)
+      box.classList.add('box')
+      document.getElementById('board').append(box)
+    }
+  }
+}
+
