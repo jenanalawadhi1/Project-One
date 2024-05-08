@@ -36,7 +36,8 @@
 
 ##### Sudoku Game
 
-https://www.canva.com/design/DAGD_3JWzsk/9USCLLkQ95j-652MfsQ0JA/view?utm_content=DAGD_3JWzsk&utm_campaign=designshare&utm_medium=link&utm_source=editor
+https://www.canva.com/design/DAGD_3JWzsk/9USCLLkQ95j-652MfsQ0JA/view?utm_content=DAGD_3JWz
+k&utm_campaign=designshare&utm_medium=link&utm_source=editor
 
 ---
 

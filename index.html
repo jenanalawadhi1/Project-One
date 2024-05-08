@@ -5,17 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css" />
   <script  dref src="script.js"></script>
-  
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
-  
   <title>Sudoku Game</title>
 </head>
 <body>
 
   <h1>Welcome To Sudoku Game</h1>
 
+  <div> 
   <button onclick="document.location= 'gamepage.html'">Get Start</button>
-  <button onclick="darkMode()" id="darkMode">Dark mode</button>
+  <button onclick="darkMode()">Dark mode</button>
+
+  
+
+ 
+  <button onclick="gameRules()">Sudoku Rules</button>
+  <div id="gameRules">
+    You can use only numbers from 1 to 9. 
+<br>
+    Each 3×3 block can only contain numbers from 1 to 9. 
+    <br>
+    Each vertical column can only contain numbers from 1 to 9. 
+    <br>
+    Each horizontal row can only contain numbers from 1 to 9. 
+    <br>
+    Each number in the 3×3 block, vertical column or horizontal row can be used only once. 
+    </div>
+
+
+ 
+  
+
+
+
 
 </body>
 </html>

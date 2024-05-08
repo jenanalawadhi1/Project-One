@@ -30,10 +30,19 @@ function darkMode() {
   number.classList.toggle('dark-mode')
 }
 
+function gameRules() {
+  let rules = document.getElementById('gameRules')
+  if (rules.style.display === 'none') {
+    rules.style.display = 'block'
+  } else {
+    rules.style.display = 'none'
+  }
+}
+
 window.onload = function () {
   setGame()
-  document.getElementById('reset-btn').addEventListener('click', resetGame)
-  document.getElementById('solve-btn').addEventListener('click', solveGame)
+  document.getElementById('reset').addEventListener('click', resetGame)
+  document.getElementById('solve').addEventListener('click', solveGame)
 }
 
 function setGame() {
@@ -92,6 +101,7 @@ function selectbox() {
     }
   }
 }
+
 function solveGame() {
   for (let r = 0; r < 9; r++) {
     for (let c = 0; c < 9; c++) {

@@ -1,21 +1,29 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  margin: auto;
+  background-color: rgba(166, 196, 248, 0.527);
 }
 
 h1 {
+  margin: center;
   font-family: 'Audiowide', sans-serif;
+  color: rgb(24, 42, 75);
+}
+
+ul {
+  color: black;
+  font-size: 15px;
 }
 
 button {
+  margin: 10px;
   background-color: rgb(70, 130, 241);
   color: black;
   font-size: 15px;
   padding: 15px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
 }
+
 .dark-mode {
   background-color: black;
   color: white;
@@ -37,7 +45,7 @@ button {
 .box {
   width: 48px;
   height: 48px;
-  border: 1px solid lightgray;
+  border: 1px solid rgb(170, 167, 167);
 
   font-size: 20px;
   font-weight: bold;
@@ -82,4 +90,8 @@ button {
 
 .vertical-line {
   border-right: 1px solid rgb(39, 171, 247);
+}
+
+#gameRules {
+  display: none;
 }
