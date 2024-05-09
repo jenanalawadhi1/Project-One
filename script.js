@@ -1,6 +1,7 @@
 let selectNum
 let errors = 0
 
+//represents : nitial Sudoku board with empty spaces'*' and solution 
 let board = [
   '******2**',
   '*8***7*9*',
@@ -25,11 +26,13 @@ let solution = [
   '736185429'
 ]
 
+// dark mode 
 function darkMode() {
-  let number = document.body
-  number.classList.toggle('dark-mode')
+  let dark = document.body
+  dark.classList.toggle('dark-mode')
 }
 
+// show and hide game rules
 function gameRules() {
   let rules = document.getElementById('gameRules')
   if (rules.style.display === 'none') {
@@ -39,6 +42,7 @@ function gameRules() {
   }
 }
 
+// call the setGame function when winddow load
 window.onload = function () {
   setGame()
   document.getElementById('reset').addEventListener('click', resetGame)
