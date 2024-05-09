@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-  margin: center;
+  margin: 100px;
   font-family: 'Audiowide', sans-serif;
   color: rgb(24, 42, 75);
 }
@@ -17,7 +17,7 @@ ul {
 }
 
 button {
-  margin: 10px;
+  margin: 30px;
   background-color: rgb(70, 130, 241);
   color: black;
   font-size: 15px;
@@ -94,4 +94,12 @@ button {
 
 #gameRules {
   display: none;
+  font-family: verdana;
+  font-size: 20px;
+  position: absolute;
+  top: 350px;
+  right: 280px;
+  width: 400px;
+  height: 210px;
+  border: 3px solid rgb(39, 171, 247);
 }
