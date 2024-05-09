@@ -48,7 +48,7 @@ window.onload = function () {
   document.getElementById('reset').addEventListener('click', resetGame)
   document.getElementById('solve').addEventListener('click', solveGame)
 }
-
+// creates numbers 1-9 and added them to the page , creates box element to make sudoku bord 
 function setGame() {
   for (let i = 1; i <= 9; i++) {
     let number = document.createElement('div')
@@ -78,7 +78,7 @@ function setGame() {
     }
   }
 }
-
+// 
 function selectNumber() {
   if (selectNum != null) {
     selectNum.classList.remove('number-selected')
